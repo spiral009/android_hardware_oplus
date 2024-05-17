@@ -20,6 +20,7 @@ genfscon sysfs /devices/virtual/oplus_chg                              u:object_
 genfscon sysfs /devices/virtual/oplus_chg/usb                          u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/virtual/oplus_chg/battery                      u:object_r:vendor_sysfs_battery_supply:s0
 
+
 # Display
 genfscon proc /devinfo/lcd              u:object_r:vendor_proc_display:s0
 genfscon proc /touchpanel               u:object_r:vendor_proc_display:s0
@@ -33,7 +34,8 @@ genfscon sysfs /devices/platform/soc/soc:qcom,cpu6-cpu-l3-lat                   
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display                                           u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw                                                 u:object_r:vendor_sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw/devfreq                                         u:object_r:vendor_sysfs_msm_subsys:s0
-genfscon sysfs /kernel/oplus_display    u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /kernel/oplus_display                                   u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /kernel/oplus_display/dimlayer_bl_en                    u:object_r:vendor_sysfs_graphics:s0
 
 # Extcon sysfs                                                                                u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/extcon                 u:object_r:sysfs_extcon:s0
